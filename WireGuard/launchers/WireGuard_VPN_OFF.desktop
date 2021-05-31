@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=WireGuard VPN OFF
+GenericName=Disable the WireGuard connection to Home
+Comment=
+Exec=../wg-enable.sh up
+Type=Application
+Icon=../icons/WireGuard.png
+Terminal=true
