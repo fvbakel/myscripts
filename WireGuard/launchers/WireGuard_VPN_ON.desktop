@@ -1,8 +1,8 @@
 [Desktop Entry]
 Name=WireGuard VPN ON
-GenericName=Set on the WireGuard connection to home-vpn
+GenericName=Set on the WireGuard connection to Home
 Comment=
-Exec=../wg-enable.sh up
+Exec=../wg-enable.sh home-vpn up
 Type=Application
 Icon=../icons/WireGuard.png
-Terminal=true
+Terminal=false
