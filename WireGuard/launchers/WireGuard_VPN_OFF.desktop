@@ -2,7 +2,7 @@
 Name=WireGuard VPN OFF
 GenericName=Disable the WireGuard connection to Home
 Comment=
-Exec=../wg-enable.sh up
+Exec=../wg-enable.sh home-vpn down
 Type=Application
 Icon=../icons/WireGuard.png
-Terminal=true
+Terminal=false
