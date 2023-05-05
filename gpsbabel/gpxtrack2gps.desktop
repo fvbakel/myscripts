@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=GpxTrack2Gps
+Comment=Copy the track of a gpx file to GPS
+Exec=~/git/gpxtrack2gps.sh %f
+Icon=edit-copy
+Path=
+Terminal=true
+StartupNotify=false
+Actions=
+Categories=Education
+NoDisplay=false
+MimeType=application/gpx+xml
