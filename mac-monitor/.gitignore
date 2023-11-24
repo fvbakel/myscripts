@@ -1,0 +1,7 @@
+tmp
+*.code-workspace
+.vscode
+__pycache__
+*.log
+devices.txt
+monior.json
