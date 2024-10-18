@@ -19,7 +19,7 @@ The REST API is Flask based. The table below list the available REST requests.
 | /refresh | <http://127.0.0.1:9090/refresh>  | Rescan. This can take a while |
 | /monitor  | <http://127.0.0.1:9090/monitor> | Last update info of the monitor |
 | /devices | <http://127.0.0.1:9090/devices/> | list of device id's |
-| /devices?fields=<> | <http://127.0.0.1:9090/devices?fields=id,time_since_seen_sec> | For each device, output the given fields  |
+| /devices?fields=<> | <http://127.0.0.1:9090/devices/?fields=id,time_since_seen_sec> | For each device, output the given fields  |
 | /devices/<id> | <http://127.0.0.1:9090/devices/aa> | Output all fields of the given device |
 
 All output is in JSON format.
@@ -47,4 +47,19 @@ fa:11:23:21:2e:9e|aa|Device 1
 
 Take the following steps to install.
 
-TODO
+- ```sudo apt-get install nmap python3-flask python3-nmap```
+- copy this directory to your target
+- ```python3 config.py```
+- update monitor.json to your needs
+- create devices.txt to your needs (see format above)
+- Test the installation to this point. The command should output the device information to the console.
+- ```python3 python3 test_device_monitor.py```
+- Now we are ready to run the service in the console
+- ```python3 flask_service.py```
+- Test the Rest service is now available
+
+## Install as a service 
+
+- ```sudo cp mac-monitor.service /etc/systemd/system/```
+- edit path in ```/etc/systemd/system/mac-monitor.service```
+- 

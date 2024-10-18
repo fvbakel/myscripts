@@ -1,4 +1,4 @@
 class Constants:  
     ARP_FILE = '/proc/net/arp'
     OK = 'OK'
-    CONFIG_FILENAME = 'monior.json'
+    CONFIG_FILENAME = 'monitor.json'

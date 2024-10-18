@@ -4,4 +4,4 @@ tmp
 __pycache__
 *.log
 devices.txt
-monior.json
+monitor.json
